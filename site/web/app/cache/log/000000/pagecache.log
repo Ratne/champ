@@ -1,0 +1,17 @@
+[Mon, 03 Jul 2017 15:46:41 +0000] [/wp-admin/admin.php?page=w3tc_general&w3tc_message=595a66e13918f] [https://www.campioniomaggiosocial.com/wp-admin/admin.php?page=w3tc_general] skip processing because of generic constant
+[Mon, 03 Jul 2017 15:46:42 +0000] [/wp-cron.php?doing_wp_cron=1499096802.1487360000610351562500] [https://www.campioniomaggiosocial.com/wp-cron.php?doing_wp_cron=1499096802.1487360000610351562500] skip processing because of generic constant
+[Mon, 03 Jul 2017 15:46:42 +0000] [/w3tc_rewrite_test474080169] [https://www.campioniomaggiosocial.com/w3tc_rewrite_test474080169] start, can_cache: false
+[Mon, 03 Jul 2017 15:46:49 +0000] [/] [-] start, can_cache: false
+[Mon, 03 Jul 2017 15:46:49 +0000] [/] [-] storing cached page: false original false reason SSL caching disabled
+[Mon, 03 Jul 2017 15:46:50 +0000] [/wp-content/cache/minify/eacd4.css] [https://www.campioniomaggiosocial.com/] start, can_cache: false
+[Mon, 03 Jul 2017 15:46:50 +0000] [/wp-content/cache/minify/df983.js] [https://www.campioniomaggiosocial.com/] start, can_cache: false
+[Mon, 03 Jul 2017 15:46:52 +0000] [/wp-content/cache/minify/df983.js] [https://www.campioniomaggiosocial.com/] storing cached page - not a cached content
+[Mon, 03 Jul 2017 15:46:52 +0000] [/wp-content/cache/minify/1023d.js] [https://www.campioniomaggiosocial.com/] start, can_cache: false
+[Mon, 03 Jul 2017 15:46:53 +0000] [/wp-content/cache/minify/eacd4.css] [https://www.campioniomaggiosocial.com/] storing cached page - not a cached content
+[Mon, 03 Jul 2017 15:46:54 +0000] [/wp-content/cache/minify/1023d.js] [https://www.campioniomaggiosocial.com/] storing cached page - not a cached content
+[Mon, 03 Jul 2017 15:46:54 +0000] [/wp-content/cache/minify/6f385.js] [https://www.campioniomaggiosocial.com/] start, can_cache: false
+[Mon, 03 Jul 2017 15:46:54 +0000] [/wp-content/cache/minify/6f385.js] [https://www.campioniomaggiosocial.com/] storing cached page - not a cached content
+[Mon, 03 Jul 2017 15:46:55 +0000] [/wp-admin/admin.php?page=w3tc_general] [https://www.campioniomaggiosocial.com/wp-admin/admin.php?page=w3tc_general&w3tc_message=595a66e13918f] skip processing because of generic constant
+[Mon, 03 Jul 2017 15:46:56 +0000] [/wp-admin/admin.php?page=w3tc_general&w3tc_message=595a66f02bcd8] [https://www.campioniomaggiosocial.com/wp-admin/admin.php?page=w3tc_general&w3tc_message=595a66e13918f] skip processing because of generic constant
+[Mon, 03 Jul 2017 15:46:57 +0000] [/w3tc_rewrite_test613459549] [https://www.campioniomaggiosocial.com/w3tc_rewrite_test613459549] start, can_cache: false
+[Mon, 03 Jul 2017 15:47:08 +0000] [/wp-admin/admin.php?page=w3tc_general] [https://www.campioniomaggiosocial.com/wp-admin/admin.php?page=w3tc_general&w3tc_message=595a66f02bcd8] skip processing because of generic constant

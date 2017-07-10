@@ -1,0 +1,195 @@
+
+[Mon, 03 Jul 2017 15:46:42 +0000] [/wp-cron.php?doing_wp_cron=1499096802.1487360000610351562500] [1499096802.6293]
+Db cache debug info:
+Engine:             memcached
+Total queries:      5
+Cached queries:     0
+Total query time:   0.0012
+SQL info:
+    # | Time (s) |    Caching (Reject reason)     |   Status   | Data size (b) | Query
+    1 |   0.0002 | disabled (DOING_CRON constant defined) | not cached |             0 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('portfolio_category') ORDER BY t.name ASC
+    2 |   0.0002 | disabled (DOING_CRON constant defined) | not cached |             0 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('faq_category') ORDER BY t.name ASC
+    3 |   0.0001 | disabled (DOING_CRON constant defined) | not cached |             0 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('slide-page') ORDER BY t.name ASC
+    4 |   0.0005 | disabled (DOING_CRON constant defined) | not cached |             0 | SELECT autoload FROM scq_options WHERE option_name = '_transient_doing_cron'
+    5 |   0.0002 | disabled (DOING_CRON constant defined) | not cached |             0 | SELECT autoload FROM scq_options WHERE option_name = '_transient_timeout_doing_cron'
+
+[Mon, 03 Jul 2017 15:46:43 +0000] [/w3tc_rewrite_test474080169] [1499096803.2585]
+Db cache debug info:
+Engine:             memcached
+Total queries:      0
+Cached queries:     0
+Total query time:   0.0000
+
+[Mon, 03 Jul 2017 15:46:43 +0000] [/wp-admin/admin.php?page=w3tc_general&w3tc_message=595a66e13918f] [1499096803.3355]
+Db cache debug info:
+Engine:             memcached
+Total queries:      18
+Cached queries:     0
+Total query time:   0.0110
+SQL info:
+    # | Time (s) |    Caching (Reject reason)     |   Status   | Data size (b) | Query
+    1 |   0.0007 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT autoload FROM scq_options WHERE option_name = '_transient_w3tc_message'
+    2 |   0.0002 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT autoload FROM scq_options WHERE option_name = '_transient_timeout_w3tc_message'
+    3 |   0.0002 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT wposts.ID FROM scq_posts wposts, scq_postmeta wpostmeta WHERE wposts.ID = wpostmeta.post_id AND wpostmeta.meta_key = '_wp_attached_file' AND wpostmeta.meta_value = '2017/06/camp.png' AND wposts.post_type = 'attachment'
+    4 |   0.0016 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT option_value FROM scq_options WHERE option_name = '_transient_timeout_doing_cron' LIMIT 1
+    5 |   0.0002 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT option_value FROM scq_options WHERE option_name = '_transient_doing_cron' LIMIT 1
+    6 |   0.0011 |      disabled (WP_ADMIN)       | not cached |             0 | INSERT INTO `scq_options` (`option_name`, `option_value`, `autoload`) VALUES ('_transient_doing_cron', '1499096802.1487360000610351562500', 'yes') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+    7 |   0.0001 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('portfolio_category') ORDER BY t.name ASC
+    8 |   0.0002 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('faq_category') ORDER BY t.name ASC
+    9 |   0.0001 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('slide-page') ORDER BY t.name ASC
+   10 |   0.0001 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT comment_approved, COUNT( * ) AS total
+		FROM scq_comments
+		
+		GROUP BY comment_approved
+   11 |   0.0006 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT option_value FROM scq_options WHERE option_name = '_transient_timeout_w3tc_license_status' LIMIT 1
+   12 |   0.0003 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT option_value FROM scq_options WHERE option_name = '_transient_w3tc_license_status' LIMIT 1
+   13 |   0.0011 |      disabled (WP_ADMIN)       | not cached |             0 | INSERT INTO `scq_options` (`option_name`, `option_value`, `autoload`) VALUES ('_transient_timeout_w3tc_license_status', '1499528802', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+   14 |   0.0009 |      disabled (WP_ADMIN)       | not cached |             0 | INSERT INTO `scq_options` (`option_name`, `option_value`, `autoload`) VALUES ('_transient_w3tc_license_status', 'no_key', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+   15 |   0.0005 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT option_value FROM scq_options WHERE option_name = '_transient_timeout_w3tc_rewrite_test_a2b02760e3d4523f' LIMIT 1
+   16 |   0.0003 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT option_value FROM scq_options WHERE option_name = '_transient_w3tc_rewrite_test_a2b02760e3d4523f' LIMIT 1
+   17 |   0.0018 |      disabled (WP_ADMIN)       | not cached |             0 | INSERT INTO `scq_options` (`option_name`, `option_value`, `autoload`) VALUES ('_transient_timeout_w3tc_rewrite_test_a2b02760e3d4523f', '1499096833', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+   18 |    0.001 |      disabled (WP_ADMIN)       | not cached |             0 | INSERT INTO `scq_options` (`option_name`, `option_value`, `autoload`) VALUES ('_transient_w3tc_rewrite_test_a2b02760e3d4523f', '1', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+
+[Mon, 03 Jul 2017 15:46:49 +0000] [/] [1499096809.798]
+Db cache debug info:
+Engine:             memcached
+Total queries:      23
+Cached queries:     2
+Total query time:   0.0058
+SQL info:
+    # | Time (s) |    Caching (Reject reason)     |   Status   | Data size (b) | Query
+    1 |   0.0002 |            enabled             | not cached |          3512 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('portfolio_category') ORDER BY t.name ASC
+    2 |   0.0002 |            enabled             | not cached |          3506 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('faq_category') ORDER BY t.name ASC
+    3 |   0.0001 |            enabled             | not cached |          3504 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('slide-page') ORDER BY t.name ASC
+    4 |   0.0002 |            enabled             | not cached |         12670 | SELECT   scq_posts.* FROM scq_posts  WHERE 1=1  AND scq_posts.ID = 7 AND scq_posts.post_type = 'page'  ORDER BY scq_posts.post_date DESC
+    5 |   0.0002 |            enabled             | not cached |          3611 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id INNER JOIN scq_term_relationships AS tr ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy IN ('post_tag') AND tr.object_id IN (7) ORDER BY t.name ASC
+    6 |   0.0001 |            enabled             | not cached |          3611 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id INNER JOIN scq_term_relationships AS tr ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy IN ('category') AND tr.object_id IN (7) ORDER BY t.name ASC
+    7 |   0.0002 |            enabled             | not cached |          7910 | SELECT * FROM scq_posts  WHERE (post_type = 'page' AND post_status = 'publish')    AND post_parent = 7   ORDER BY scq_posts.post_title ASC LIMIT 0,1
+    8 |   0.0002 |            enabled             | not cached |           839 | SELECT tr.object_id FROM scq_term_relationships AS tr INNER JOIN scq_term_taxonomy AS tt ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy IN ('nav_menu') AND tt.term_id IN ('4') ORDER BY tr.object_id ASC
+    9 |   0.0002 |            enabled             | not cached |         10346 | SELECT   scq_posts.* FROM scq_posts  WHERE 1=1  AND scq_posts.ID IN (234,235,236) AND scq_posts.post_type = 'nav_menu_item' AND ((scq_posts.post_status = 'publish'))  ORDER BY scq_posts.menu_order ASC
+   10 |   0.0002 |            enabled             | not cached |           718 | SELECT wposts.ID FROM scq_posts wposts, scq_postmeta wpostmeta WHERE wposts.ID = wpostmeta.post_id AND wpostmeta.meta_key = '_wp_attached_file' AND wpostmeta.meta_value = '2017/06/camp.png' AND wposts.post_type = 'attachment'
+   11 |   0.0001 |            enabled             | not cached |           788 | SELECT tr.object_id FROM scq_term_relationships AS tr INNER JOIN scq_term_taxonomy AS tt ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy IN ('nav_menu') AND tt.term_id IN ('2') ORDER BY tr.object_id ASC
+   12 |   0.0001 |            enabled             | not cached |          9556 | SELECT   scq_posts.* FROM scq_posts  WHERE 1=1  AND scq_posts.ID IN (32,33) AND scq_posts.post_type = 'nav_menu_item' AND ((scq_posts.post_status = 'publish'))  ORDER BY scq_posts.menu_order ASC
+   13 |   0.0002 |            enabled             | not cached |         12715 | SELECT   scq_posts.* FROM scq_posts  WHERE 1=1  AND scq_posts.ID IN (7) AND scq_posts.post_type = 'page' AND ((scq_posts.post_status = 'publish'))  ORDER BY scq_posts.post_date DESC
+   14 |   0.0001 |            enabled             | not cached |          1250 | SELECT rating_username, rating_rating, rating_ip FROM scq_ratings WHERE rating_postid = 7
+   15 |   0.0001 |            enabled             |   cached   |          1275 | SELECT rating_username, rating_rating, rating_ip FROM scq_ratings WHERE rating_postid = 7
+   16 |   0.0001 |            enabled             | not cached |          3616 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id INNER JOIN scq_term_relationships AS tr ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy IN ('post_format') AND tr.object_id IN (231) ORDER BY t.name ASC
+   17 |   0.0001 |            enabled             | not cached |          3613 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id INNER JOIN scq_term_relationships AS tr ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy IN ('post_tag') AND tr.object_id IN (231) ORDER BY t.name ASC
+   18 |   0.0001 |            enabled             | not cached |          3616 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id INNER JOIN scq_term_relationships AS tr ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy IN ('post_format') AND tr.object_id IN (229) ORDER BY t.name ASC
+   19 |   0.0001 |            enabled             | not cached |          3613 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id INNER JOIN scq_term_relationships AS tr ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy IN ('post_tag') AND tr.object_id IN (229) ORDER BY t.name ASC
+   20 |   0.0002 |            enabled             |   cached   |          1275 | SELECT rating_username, rating_rating, rating_ip FROM scq_ratings WHERE rating_postid = 7
+   21 |   0.0002 |            enabled             | not cached |           565 | SELECT rating_ip FROM scq_ratings WHERE rating_postid = 7 AND rating_ip = '87.13.214.27'
+   22 |   0.0013 |            enabled             | not cached |           569 | SELECT option_value FROM scq_options WHERE option_name = 'w3tc_minify' LIMIT 1
+   23 |   0.0012 | disabled (query not cacheable) | not cached |             0 | INSERT INTO `scq_options` (`option_name`, `option_value`, `autoload`) VALUES ('w3tc_minify', '{\"df983.js\":[\"wp-includes\\/js\\/jquery\\/jquery.js\",\"wp-includes\\/js\\/jquery\\/jquery-migrate.min.js\"]}', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+
+[Mon, 03 Jul 2017 15:46:52 +0000] [/wp-content/cache/minify/df983.js] [1499096812.1552]
+Db cache debug info:
+Engine:             memcached
+Total queries:      0
+Cached queries:     0
+Total query time:   0.0000
+
+[Mon, 03 Jul 2017 15:46:53 +0000] [/wp-content/cache/minify/eacd4.css] [1499096813.0145]
+Db cache debug info:
+Engine:             memcached
+Total queries:      0
+Cached queries:     0
+Total query time:   0.0000
+
+[Mon, 03 Jul 2017 15:46:54 +0000] [/wp-content/cache/minify/1023d.js] [1499096814.1468]
+Db cache debug info:
+Engine:             memcached
+Total queries:      0
+Cached queries:     0
+Total query time:   0.0000
+
+[Mon, 03 Jul 2017 15:46:54 +0000] [/wp-content/cache/minify/6f385.js] [1499096814.6755]
+Db cache debug info:
+Engine:             memcached
+Total queries:      0
+Cached queries:     0
+Total query time:   0.0000
+
+[Mon, 03 Jul 2017 15:46:56 +0000] [/wp-admin/admin.php?page=w3tc_general] [1499096816.1848]
+Db cache debug info:
+Engine:             memcached
+Total queries:      11
+Cached queries:     0
+Total query time:   0.0052
+SQL info:
+    # | Time (s) |    Caching (Reject reason)     |   Status   | Data size (b) | Query
+    1 |   0.0002 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT wposts.ID FROM scq_posts wposts, scq_postmeta wpostmeta WHERE wposts.ID = wpostmeta.post_id AND wpostmeta.meta_key = '_wp_attached_file' AND wpostmeta.meta_value = '2017/06/camp.png' AND wposts.post_type = 'attachment'
+    2 |   0.0002 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('portfolio_category') ORDER BY t.name ASC
+    3 |   0.0002 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('faq_category') ORDER BY t.name ASC
+    4 |   0.0001 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('slide-page') ORDER BY t.name ASC
+    5 |   0.0001 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT comment_approved, COUNT( * ) AS total
+		FROM scq_comments
+		
+		GROUP BY comment_approved
+    6 |   0.0015 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT autoload FROM scq_options WHERE option_name = '_transient_w3tc_license_status'
+    7 |   0.0003 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT autoload FROM scq_options WHERE option_name = '_transient_timeout_w3tc_license_status'
+    8 |   0.0005 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT option_value FROM scq_options WHERE option_name = '_transient_w3tc_message' LIMIT 1
+    9 |   0.0002 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT option_value FROM scq_options WHERE option_name = '_transient_timeout_w3tc_message' LIMIT 1
+   10 |    0.001 |      disabled (WP_ADMIN)       | not cached |             0 | INSERT INTO `scq_options` (`option_name`, `option_value`, `autoload`) VALUES ('_transient_timeout_w3tc_message', '1499097416', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+   11 |   0.0009 |      disabled (WP_ADMIN)       | not cached |             0 | INSERT INTO `scq_options` (`option_name`, `option_value`, `autoload`) VALUES ('_transient_w3tc_message', 'a:1:{s:13:\"595a66f02bcd8\";a:4:{s:12:\"query_string\";a:1:{s:4:\"page\";s:12:\"w3tc_general\";}s:7:\"actions\";a:0:{}s:6:\"errors\";a:0:{}s:5:\"notes\";a:1:{i:0;s:11:\"config_save\";}}}', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+
+[Mon, 03 Jul 2017 15:46:57 +0000] [/w3tc_rewrite_test613459549] [1499096817.6706]
+Db cache debug info:
+Engine:             memcached
+Total queries:      0
+Cached queries:     0
+Total query time:   0.0000
+
+[Mon, 03 Jul 2017 15:46:57 +0000] [/wp-admin/admin.php?page=w3tc_general&w3tc_message=595a66f02bcd8] [1499096817.7421]
+Db cache debug info:
+Engine:             memcached
+Total queries:      15
+Cached queries:     0
+Total query time:   0.0096
+SQL info:
+    # | Time (s) |    Caching (Reject reason)     |   Status   | Data size (b) | Query
+    1 |   0.0007 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT autoload FROM scq_options WHERE option_name = '_transient_w3tc_message'
+    2 |   0.0003 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT autoload FROM scq_options WHERE option_name = '_transient_timeout_w3tc_message'
+    3 |   0.0001 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT wposts.ID FROM scq_posts wposts, scq_postmeta wpostmeta WHERE wposts.ID = wpostmeta.post_id AND wpostmeta.meta_key = '_wp_attached_file' AND wpostmeta.meta_value = '2017/06/camp.png' AND wposts.post_type = 'attachment'
+    4 |   0.0002 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('portfolio_category') ORDER BY t.name ASC
+    5 |   0.0001 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('faq_category') ORDER BY t.name ASC
+    6 |   0.0001 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('slide-page') ORDER BY t.name ASC
+    7 |   0.0001 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT comment_approved, COUNT( * ) AS total
+		FROM scq_comments
+		
+		GROUP BY comment_approved
+    8 |   0.0006 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT option_value FROM scq_options WHERE option_name = '_transient_timeout_w3tc_license_status' LIMIT 1
+    9 |   0.0002 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT option_value FROM scq_options WHERE option_name = '_transient_w3tc_license_status' LIMIT 1
+   10 |   0.0016 |      disabled (WP_ADMIN)       | not cached |             0 | INSERT INTO `scq_options` (`option_name`, `option_value`, `autoload`) VALUES ('_transient_timeout_w3tc_license_status', '1499528817', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+   11 |   0.0025 |      disabled (WP_ADMIN)       | not cached |             0 | INSERT INTO `scq_options` (`option_name`, `option_value`, `autoload`) VALUES ('_transient_w3tc_license_status', 'no_key', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+   12 |   0.0005 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT option_value FROM scq_options WHERE option_name = '_transient_timeout_w3tc_rewrite_test_4985e25c42a77257' LIMIT 1
+   13 |   0.0002 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT option_value FROM scq_options WHERE option_name = '_transient_w3tc_rewrite_test_4985e25c42a77257' LIMIT 1
+   14 |   0.0013 |      disabled (WP_ADMIN)       | not cached |             0 | INSERT INTO `scq_options` (`option_name`, `option_value`, `autoload`) VALUES ('_transient_timeout_w3tc_rewrite_test_4985e25c42a77257', '1499096847', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+   15 |   0.0009 |      disabled (WP_ADMIN)       | not cached |             0 | INSERT INTO `scq_options` (`option_name`, `option_value`, `autoload`) VALUES ('_transient_w3tc_rewrite_test_4985e25c42a77257', '1', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+
+[Mon, 03 Jul 2017 15:47:09 +0000] [/wp-admin/admin.php?page=w3tc_general] [1499096829.2583]
+Db cache debug info:
+Engine:             memcached
+Total queries:      15
+Cached queries:     0
+Total query time:   0.0079
+SQL info:
+    # | Time (s) |    Caching (Reject reason)     |   Status   | Data size (b) | Query
+    1 |   0.0007 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT autoload FROM scq_options WHERE option_name = '_site_transient_avada_autoloader_paths_25a356702c482bf61c24fc3a10dbb371'
+    2 |   0.0004 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT autoload FROM scq_options WHERE option_name = '_site_transient_timeout_avada_autoloader_paths_25a356702c482bf61c24fc3a10dbb371'
+    3 |   0.0002 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT wposts.ID FROM scq_posts wposts, scq_postmeta wpostmeta WHERE wposts.ID = wpostmeta.post_id AND wpostmeta.meta_key = '_wp_attached_file' AND wpostmeta.meta_value = '2017/06/camp.png' AND wposts.post_type = 'attachment'
+    4 |   0.0001 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('portfolio_category') ORDER BY t.name ASC
+    5 |   0.0001 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('faq_category') ORDER BY t.name ASC
+    6 |   0.0001 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT  t.*, tt.* FROM scq_terms AS t  INNER JOIN scq_term_taxonomy AS tt ON t.term_id = tt.term_id WHERE tt.taxonomy IN ('slide-page') ORDER BY t.name ASC
+    7 |   0.0002 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT comment_approved, COUNT( * ) AS total
+		FROM scq_comments
+		
+		GROUP BY comment_approved
+    8 |   0.0011 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT autoload FROM scq_options WHERE option_name = '_transient_w3tc_license_status'
+    9 |   0.0002 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT autoload FROM scq_options WHERE option_name = '_transient_timeout_w3tc_license_status'
+   10 |   0.0025 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT option_name, option_value FROM scq_options WHERE autoload = 'yes'
+   11 |   0.0001 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT *    FROM scq_links  WHERE 1=1 AND link_visible = 'Y'     ORDER BY link_name ASC
+   12 |   0.0005 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT option_value FROM scq_options WHERE option_name = '_transient_w3tc_message' LIMIT 1
+   13 |   0.0002 |      disabled (WP_ADMIN)       | not cached |             0 | SELECT option_value FROM scq_options WHERE option_name = '_transient_timeout_w3tc_message' LIMIT 1
+   14 |   0.0009 |      disabled (WP_ADMIN)       | not cached |             0 | INSERT INTO `scq_options` (`option_name`, `option_value`, `autoload`) VALUES ('_transient_timeout_w3tc_message', '1499097429', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
+   15 |   0.0006 |      disabled (WP_ADMIN)       | not cached |             0 | INSERT INTO `scq_options` (`option_name`, `option_value`, `autoload`) VALUES ('_transient_w3tc_message', 'a:1:{s:13:\"595a66fd3dfcf\";a:4:{s:12:\"query_string\";a:1:{s:4:\"page\";s:12:\"w3tc_general\";}s:7:\"actions\";a:0:{}s:6:\"errors\";a:0:{}s:5:\"notes\";a:1:{i:0;s:11:\"config_save\";}}}', 'no') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)
